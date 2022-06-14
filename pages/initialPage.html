@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Initial Page</title>
+<!--    <link rel="stylesheet" type="text/css" href="table.css">-->
+    <style>
+        #table-1 thead, #table-1 tr {
+        border-top-width: 2px;
+        border-top-style: solid;
+        border-top-color: #a8bfde;
+        }
+        #table-1 {
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: #a8bfde;
+        }
+
+        /* Padding and font style */
+        #table-1 td, #table-1 th {
+        padding: 5px 10px;
+        font-size: 17px;
+        font-family: Verdana;
+        color: #5b7da3;
+        }
+        /* Alternating background colors */
+        #table-1 tr:nth-child(even) {
+        background: #d3dfed
+        }
+        #table-1 tr:nth-child(odd) {
+        background: #FFF
+        }
+    </style>
+</head>
+
+<body>
+<h2 align="center"> Job Search Database </h2> <br />
+         <table id="table-1" align="center">
+             <tr>
+                 <td>name</td>
+                 <td>description</td>
+                 <td>link</td>
+             </tr>
+
+             <tr>
+                <td>Applicants</td>
+                <td>This table shows the basic information about applicants, include their name, major, and so on </td>
+                <td>Go to <a href="/applicants/listall">applicants!</a></td>
+             </tr>
+
+             <tr>
+                <td>Resumes</td>
+                <td>This table shows resume for application, include version and applicants email </td>
+                <td>Go to <a href="/resumes/listall">resumes!</a></td>
+             </tr>
+
+<!--             <tr>-->
+<!--                <td>Companies</td>-->
+<!--                <td>This table shows company name and some introduction</td>-->
+<!--                <td>Go to <a href="/companies/listall">companies!</a></td>-->
+<!--             </tr>-->
+
+<!--             <tr>-->
+<!--                <td>Departments</td>-->
+<!--                <td>This table shows department name and belonging</td>-->
+<!--                <td>Go to <a href="/departments/listall">departments!</a></td>-->
+<!--             </tr>-->
+
+<!--             <tr>-->
+<!--                <td>Jobs</td>-->
+<!--                <td>This table shows job information including salary location etc.</td>-->
+<!--                <td>Go to <a href="/jobs/listall">jobs!</a></td>-->
+<!--             </tr>-->
+
+<!--             <tr>-->
+<!--                <td>Interviews</td>-->
+<!--                <td>This table shows interviews information including length status and so on.</td>-->
+<!--                <td>Go to <a href="/interviews/listall">interviews!</a></td>-->
+<!--             </tr>-->
+
+<!--             <tr>-->
+<!--                <td>Interviewers</td>-->
+<!--                <td>This table shows interviewers information including name, major etc.</td>-->
+<!--                <td>Go to <a href="/interviewers/listall">interviewers!</a></td>-->
+<!--             </tr>-->
+         </table>
+
+<br />
+<h2 align="center"> Search Tool Apply on Applicants Table </h2>
+<br />
+<h2 align="center"> <a href="/mainPage">Let go to try search tool!</a> </h2>
+
+</body>
+</html>
