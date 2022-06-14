@@ -1,0 +1,23 @@
+Applicant(email string pkey, name string not null, birth-year int not null, country string not null, major string not null)
+
+Resume(id int pkey, version string, interest string, applicant_email string fkey)
+
+Interview(id int pkey, date date not null, length double, position string not null, result int not null, Job_id int fkey)    //result: processing 0 success 1 fail -1
+
+Interviewer(id int pkey, name string not null, major_not null, department_id int fkey)
+
+Jobs(id int pkey, category string not null, salary double not null, location string not null, department_id int fkey)
+
+Department(id int pkey, name string not null, max_staff_num int not null, description string, company
+_id int not null)
+
+Company(id int pkey, name string not null, category string not null, description string)
+
+Process((Resume_id int fkey, Interviewer_id int fkey)Pkey)
+
+join((Applicant_email string fkey, Interview_id int fkey)Pkey)
+
+arrange((Interviewer_id int fkey, Interview_id int fkey)Pkey)
+
+Apply((Applicant_email string fkey, Jobs_id int fkey)Pkey)
+
